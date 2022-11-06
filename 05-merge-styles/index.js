@@ -14,8 +14,7 @@ const fs = require('fs')
               styles.push(data)      
               fs.writeFile(path.join(__dirname, 'project-dist','bundle.css'), styles.join(' '), err => {  if (err) throw err;}   
               )        
-            })     
-            styles.push(file.name)
+            })    
           }      
         }
     });   
